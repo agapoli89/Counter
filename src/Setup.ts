@@ -1,4 +1,5 @@
 import { Exchanger } from "./Exchanger";
+import * _ from 'lodash';
 
 initEventListener();
 
@@ -26,7 +27,7 @@ function initEventListener() {
           getCoin("copper")
         );
         if (resultText !== null) {
-          resultText.innerText = `${ex.toCopper()}`;
+          resultText.innerText = _.padStart(`${ex.toCopper()}`, 5, "-");
         }
       });
     } else {
