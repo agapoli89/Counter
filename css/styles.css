@@ -66,4 +66,9 @@ input {
   width: 300px;
   height: auto;
 }
+
+.result {
+  margin: 0;
+  font-size: 200px;
+}
 /*# sourceMappingURL=styles.css.map */

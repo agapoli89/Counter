@@ -27,6 +27,11 @@ function initEventListener() {
           getCoin("copper")
         );
         if (resultText !== null) {
+          const img: HTMLElement | null = document.querySelector(".image");
+
+          if (img !== null) {
+            img.style.display = "none";
+          }
           resultText.innerText = _.padStart(`${ex.toCopper()}`, 5, "-");
         }
       });
