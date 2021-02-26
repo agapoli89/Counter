@@ -1,5 +1,5 @@
 import { Exchanger } from "./Exchanger";
-import * _ from 'lodash';
+import * as _ from "lodash";
 
 initEventListener();
 
