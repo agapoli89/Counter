@@ -5,20 +5,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
     <title>Przelicznik</title>
 </head>
 
 <body>
-    <main>
+    <main class="container">
         <section>
-            <form>
-                <label for="gold">Złote monety:<input type="number" id="gold" value="0"></label>
-                <label for="silver">Srebrne monety:<input type="number" id="silver" value="0"></label>
-                <label for="copper">Miedziane monety:<input type="number" id="copper" value="0"></label>
-                <button id="exchange">Przelicz</button>
+            <form class="form">
+                <label for="gold" class="form-element">Złote monety: <input type="number" id="gold" value="0"></label>
+                <label for="silver" class="form-element">Srebrne monety: <input type="number" id="silver"
+                        value="0"></label>
+                <label for="copper" class="form-element">Miedziane monety: <input type="number" id="copper"
+                        value="0"></label>
+                <button id="exchange" class="form-element form-element--btn">Przelicz</button>
             </form>
         </section>
         <section>
+            <img src="../img/coins.svg" alt="coins" class="image">
             <p id="result"></p>
         </section>
     </main>
